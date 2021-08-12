@@ -1,4 +1,29 @@
 /* Your Code Here */
+let createEmployeeRecord = function (arr) {
+    return {
+        firstName: arr[0],
+        familyName: arr[1],
+        title: arr[2],
+        payPerHour: arr[3],
+        timeInEvents: [],
+        timeOutEvents: []
+    }
+}
+
+let createEmployeeRecords = function (arrData) {
+    return arrData.map (function(arr) {
+            return createEmployeeRecord(arr);
+        }
+    )
+}
+
+let createTimeInEvent = function(employeeData) {
+   return employeeData.map(() => {
+
+   })
+}
+
+
 
 /*
  We're giving you this function. Take a look at it, you might see some usage
